@@ -27,7 +27,7 @@ const EmployeeForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3001/submit', formData);
+      const response = await axios.post('https://empmanagement.onrender.com/submit', formData);
 
       if (response.data) {
          alert('Form submitted successfully!');
